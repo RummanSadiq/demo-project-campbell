@@ -8,3 +8,5 @@ export { default as Play } from './play.svg';
 export { default as SkipBackward } from './skip-backward.svg';
 export { default as SkipForward } from './skip-forward.svg';
 export { default as Vector } from './vector.svg';
+export { default as Bin } from './bin.svg';
+export { default as Scissors } from './scissors.svg';
