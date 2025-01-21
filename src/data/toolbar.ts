@@ -1,7 +1,4 @@
-import HorizontalOrientation from '@/assets/icons/horizontal-orientation.svg';
-import BackgroundGradient from '@/assets/icons/background-gradient.svg';
-import Opacity from '@/assets/icons/opacity.svg';
-import Vector from '@/assets/icons/vector.svg';
+import { BackgroundGradient, Opacity, Vector, HorizontalOrientation } from '@/assets/icons';
 
 type ToolbarOption = {
   icon: string;

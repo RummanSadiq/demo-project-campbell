@@ -7,6 +7,10 @@ export const VideoPlayerSection: FunctionComponent = () => {
     <div className={'flex size-full flex-col'}>
       <ToolBar />
       <VideoPreview />
+      <div className={'flex justify-center border-b border-t px-4 py-2.5'}>
+        <p className={'font-medium'}>08:32</p>
+        <div className={'flex'}></div>
+      </div>
     </div>
   );
 };

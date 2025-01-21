@@ -1,5 +1,5 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import ChevronDown from '@/assets/icons/chevron-down.svg';
+import { ChevronDown } from '@/assets/icons';
 import { Separator } from '@radix-ui/themes';
 import { FunctionComponent } from 'react';
 import { ToolbarOptions } from '@/data/toolbar.ts';

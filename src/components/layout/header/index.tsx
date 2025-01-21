@@ -1,6 +1,5 @@
 import { Button } from '@/components/atom/button.tsx';
-import ChevronLeft from '@/assets/icons/chevron-left.svg';
-import BlankPage from '@/assets/icons/blank-page.svg';
+import { ChevronLeft, BlankPage } from '@/assets/icons';
 import { FunctionComponent } from 'react';
 
 type Props = object;
@@ -19,7 +18,7 @@ export const Header: FunctionComponent<Props> = () => {
       <div className={'flex gap-3'}>
         <Button variant={'outline'} className={'!rounded-lg !p-1'}>
           <div
-            className={'text-md bg-teal flex size-6 flex-col justify-center rounded-lg text-white'}
+            className={'text-md flex size-6 flex-col justify-center rounded-lg bg-teal text-white'}
           >
             <p>C</p>
           </div>
