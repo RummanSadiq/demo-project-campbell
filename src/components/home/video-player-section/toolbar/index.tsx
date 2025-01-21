@@ -14,7 +14,7 @@ export const ToolBar: FunctionComponent = () => {
               <div className='flex cursor-pointer items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium transition hover:bg-gray-100'>
                 <img src={item.icon} alt={item.label.toLowerCase()} />
                 <p>{item.label}</p>
-                <img src={ChevronDown} alt='chevron-down' />
+                <img src={ChevronDown} alt='chevron-down' className={'px-1 py-1.5'} />
               </div>
             </DropdownMenu.Trigger>
             <DropdownMenu.Portal>

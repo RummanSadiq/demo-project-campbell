@@ -4,13 +4,15 @@ import { VideoPreview } from '@/components/home/video-player-section/video-previ
 import { VideoPlayerController } from '@/components/home/video-player-section/video-player-controller';
 import { VideoTimeline } from '@/components/home/video-player-section/video-timeline';
 
-export const VideoPlayerSection: FunctionComponent = () => {
+type Props = { openDrawer: boolean };
+
+export const VideoPlayerSection: FunctionComponent<Props> = ({ openDrawer }) => {
   return (
     <div className={'flex size-full flex-col'}>
       <ToolBar />
       <VideoPreview />
       <VideoPlayerController />
-      <VideoTimeline />
+      <VideoTimeline openDrawer={openDrawer} />
     </div>
   );
 };
