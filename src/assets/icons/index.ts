@@ -11,3 +11,4 @@ export { default as Vector } from './vector.svg';
 export { default as Bin } from './bin.svg';
 export { default as Scissors } from './scissors.svg';
 export { default as BlueZoomIn } from './blue-zoom-in.svg';
+export { default as Plus } from './plus.svg';

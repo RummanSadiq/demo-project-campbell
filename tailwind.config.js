@@ -7,7 +7,7 @@ export default {
         primary: { DEFAULT: '#2160FD' },
         foreground: { DEFAULT: '#FAFAFA', secondary: '#282828' },
         muted: { DEFAULT: '#EFEFEF' },
-        border: { DEFAULT: '#EFEFEF' },
+        border: { DEFAULT: '#EFEFEF', light: '#F5F5F5' },
         teal: '#21CCEE',
         blue: { light: '#A6F0FC', mild: '#0C8AB2', 'extra-light': '#06AED4' },
       },

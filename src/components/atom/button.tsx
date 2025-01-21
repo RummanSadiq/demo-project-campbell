@@ -6,7 +6,7 @@ import {
 } from 'react';
 import classNames from 'classnames';
 
-type ButtonVariant = 'default' | 'outline' | 'text' | 'alert' | 'icon';
+type ButtonVariant = 'default' | 'outline' | 'text' | 'ghost' | 'icon';
 
 type Props = {
   className?: string;
@@ -29,8 +29,7 @@ export const Button: FunctionComponent<PropsWithChildren<Props>> = ({
     outline:
       'border font-medium hover:bg-gray-100 transition disabled:opacity-50 px-2.5 py-1.5 text-sm',
     text: 'font-semibold hover:bg-light-foreground',
-    alert:
-      'bg-error p-3 text-white hover:bg-opacity-90 disabled:text-muted-foreground disabled:bg-border',
+    ghost: 'bg-white p-2 hover:bg-gray-100 shadow-sm border border-light',
     icon: 'rounded-md p-1.5 hover:bg-muted transition',
   };
 
