@@ -7,7 +7,7 @@ type Props = object;
 export const Header: FunctionComponent<Props> = () => {
   return (
     <div className={'flex items-center justify-between border-b px-4 py-3.5'}>
-      <Button variant={'outline'} className={'flex items-center gap-1.5'}>
+      <Button variant={'outline'} className={'flex items-center gap-1.5 shadow'}>
         <img src={ChevronLeft} alt={'chevron-left'} />
         <span>Back</span>
       </Button>

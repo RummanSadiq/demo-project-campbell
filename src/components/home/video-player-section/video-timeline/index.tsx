@@ -5,11 +5,13 @@ import { VideoWave } from '@/components/home/video-player-section/video-timeline
 import { AudioWave } from '@/components/home/video-player-section/video-timeline/timeline/AudioWave.tsx';
 import { Line } from '@/assets/icons';
 
-export const VideoTimeline: FunctionComponent = () => {
+type Props = { openDrawer: boolean };
+
+export const VideoTimeline: FunctionComponent<Props> = ({ openDrawer }) => {
   return (
-    <div className={'flex flex-col gap-2'}>
-      <TimeMarkers />
-      <div className={'relative flex flex-col gap-2 p-3 pt-0'}>
+    <div className={'flex w-full flex-col gap-2'}>
+      <TimeMarkers openDrawer={openDrawer} />
+      <div className={'relative flex w-full flex-col gap-2 p-3 pt-0'}>
         <img src={Line} alt={'line'} className={'absolute left-20 z-20 w-fit'} />
         <VideoWave />
         <TimelineZoomScroller />

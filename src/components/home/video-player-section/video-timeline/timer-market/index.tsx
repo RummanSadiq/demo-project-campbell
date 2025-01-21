@@ -1,7 +1,8 @@
 import { FunctionComponent, useMemo } from 'react';
-import { Separator } from '@radix-ui/themes';
+import classNames from 'classnames';
 
 type Props = {
+  openDrawer: boolean;
   intervalSeconds?: number;
   totalDuration?: number;
 };
@@ -9,6 +10,7 @@ type Props = {
 export const TimeMarkers: FunctionComponent<Props> = ({
   intervalSeconds = 2,
   totalDuration = 80,
+  openDrawer,
 }) => {
   const timeMarkers = useMemo(() => {
     const markers = [];
@@ -24,14 +26,15 @@ export const TimeMarkers: FunctionComponent<Props> = ({
 
   return (
     <div
-      className={`no-scrollbar flex w-full max-w-[calc(100vw-160px)] gap-x-3.5 overflow-auto border-b bg-foreground px-4 py-1.5 text-xxs transition`}
+      className={classNames(
+        `no-scrollbar flex w-full gap-x-3.5 overflow-auto border-b bg-foreground px-4 py-1.5 text-xxs transition`,
+        openDrawer ? 'max-w-[calc(100vw-480px)]' : 'max-w-[calc(100vw-180px)]',
+      )}
     >
       {timeMarkers.map((time, index) => (
         <div key={time} className='flex items-center'>
           <p>{time}</p>
-          {index < timeMarkers.length - 1 && (
-            <Separator orientation='vertical' className='ml-3.5' />
-          )}
+          {index < timeMarkers.length - 1 && <div className={'ml-3.5 h-2 w-[2px] bg-muted'} />}
         </div>
       ))}
     </div>

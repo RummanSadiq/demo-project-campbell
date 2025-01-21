@@ -12,7 +12,6 @@ type Props = {
 
 export const Drawer: FunctionComponent<PropsWithChildren<Props>> = ({
   children,
-  isOpen,
   onClose,
   className,
   title,
@@ -20,11 +19,7 @@ export const Drawer: FunctionComponent<PropsWithChildren<Props>> = ({
   return (
     <div
       className={classNames(
-        'fixed bottom-0 top-[69px] z-10 flex w-75 flex-col border-l bg-white transition-transform duration-300',
-        {
-          'translate-x-full': !isOpen,
-          '--translate-x-full right-12': isOpen,
-        },
+        'flex w-75 flex-col border-l bg-white transition-transform duration-300',
         className,
       )}
     >
