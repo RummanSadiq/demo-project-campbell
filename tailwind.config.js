@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: { DEFAULT: '#2160FD' },
         foreground: { DEFAULT: '#FAFAFA', secondary: '#282828' },
+        muted: { DEFAULT: '#EFEFEF' },
         border: { DEFAULT: '#EFEFEF' },
         teal: '#21CCEE',
       },

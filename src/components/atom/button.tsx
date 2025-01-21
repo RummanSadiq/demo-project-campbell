@@ -31,7 +31,7 @@ export const Button: FunctionComponent<PropsWithChildren<Props>> = ({
     text: 'font-semibold hover:bg-light-foreground',
     alert:
       'bg-error p-3 text-white hover:bg-opacity-90 disabled:text-muted-foreground disabled:bg-border',
-    icon: 'flex size-7 items-center justify-center rounded !p-1 active:bg-light-foreground hover:bg-light-accent',
+    icon: 'rounded-md p-1.5 hover:bg-muted transition',
   };
 
   return (
