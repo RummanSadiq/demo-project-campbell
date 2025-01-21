@@ -25,7 +25,8 @@ export const Button: FunctionComponent<PropsWithChildren<Props>> = ({
   onClick,
 }) => {
   const variantClasses = {
-    default: 'bg-primary px-2.5 py-2 text-white hover:bg-opacity-90 font-medium',
+    default:
+      'bg-primary px-2.5 py-2 text-white hover:bg-opacity-100 font-medium bg-opacity-90 transition',
     outline:
       'border font-medium hover:bg-gray-100 transition disabled:opacity-50 px-2.5 py-1.5 text-sm',
     text: 'font-semibold hover:bg-light-foreground',

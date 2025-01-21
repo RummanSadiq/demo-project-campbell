@@ -13,6 +13,7 @@ export const LeftSidebar: FunctionComponent = () => {
           count={thumbnail.count}
           duration={thumbnail.duration}
           src={thumbnail.src}
+          selected={thumbnail.selected}
         />
       ))}
       <Button variant={'ghost'} className={'flex justify-center'}>

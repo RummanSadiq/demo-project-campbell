@@ -11,7 +11,11 @@ export const Header: FunctionComponent<Props> = () => {
         <img src={ChevronLeft} alt={'chevron-left'} />
         <span>Back</span>
       </Button>
-      <div className={'flex gap-2 font-medium'}>
+      <div
+        className={
+          'flex cursor-pointer gap-2 rounded-md p-1.5 font-medium transition hover:bg-gray-100'
+        }
+      >
         <img src={BlankPage} alt={'black-page'} />
         <p>Starter Project</p>
       </div>
