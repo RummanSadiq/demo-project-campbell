@@ -6,7 +6,8 @@ export default {
       colors: {
         primary: { DEFAULT: '#2160FD' },
         foreground: { DEFAULT: '#FAFAFA', secondary: '#282828' },
-        muted: { DEFAULT: '#EFEFEF' },
+        
+        muted: { DEFAULT: '#EFEFEF', secondary:'#707070'},
         border: { DEFAULT: '#EFEFEF', light: '#F5F5F5' },
         teal: '#21CCEE',
         blue: { light: '#A6F0FC', mild: '#0C8AB2', 'extra-light': '#06AED4' },
@@ -22,6 +23,9 @@ export default {
           linear-gradient(180deg, #CAF6FD 0%, #F4FDFE 100%)
         `,
       },
+      spacing:{
+        75: '18.75rem'
+      }
     },
   },
   plugins: [],

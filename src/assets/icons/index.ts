@@ -12,3 +12,12 @@ export { default as Bin } from './bin.svg';
 export { default as Scissors } from './scissors.svg';
 export { default as BlueZoomIn } from './blue-zoom-in.svg';
 export { default as Plus } from './plus.svg';
+export {default as UploadField} from './upload-field.svg'
+export { default as File } from './file.svg';
+export { default as Layout } from './layout.svg'
+export { default as Record } from './record.svg';
+export { default as Upload } from './upload.svg';
+export { default as Type } from './type.svg';
+export { default as ColsedCaptioning } from './closed-captioning.svg'
+export { default as Music } from './music.svg';
+export { default as Cross } from './cross.svg';
