@@ -13,12 +13,15 @@ export const TimelineZoomScroller: FunctionComponent = () => {
       max={100}
       step={1}
     >
-      <Slider.Thumb className='bg-blue-light flex h-8 w-44 cursor-pointer items-center gap-1 rounded-lg p-1 text-sm font-medium outline-none'>
-        <Button variant={'outline'} className={'bg-blue-gradient mr-0.5 size-6 border-teal !p-1'}>
-          <img src={BlueZoomIn} alt={'zoom-in'} className={'size-full'} />
-        </Button>
-        <p className={'text-blue-mild'}>Zoom</p>
-        <p className={'text-blue-extra-light'}>2s</p>
+      <Slider.Thumb className='group flex h-8 w-44 cursor-pointer items-center justify-between rounded-lg border border-transparent bg-blue-light p-1 text-sm font-medium outline-none hover:border-teal'>
+        <div className={'flex items-center gap-1'}>
+          <Button variant={'outline'} className={'mr-0.5 size-6 border-teal bg-blue-gradient !p-1'}>
+            <img src={BlueZoomIn} alt={'zoom-in'} className={'size-full'} />
+          </Button>
+          <p className={'text-blue-mild'}>Zoom</p>
+          <p className={'text-blue-extra-light'}>2s</p>
+        </div>
+        <div className={'h-4 w-0.5 group-hover:bg-teal'} />
       </Slider.Thumb>
     </Slider.Root>
   );
