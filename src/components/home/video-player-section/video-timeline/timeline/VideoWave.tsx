@@ -18,15 +18,19 @@ export const VideoWave: FunctionComponent = () => {
   });
 
   return (
-    <div className={'bg-blue-subtle relative rounded-lg py-4'}>
-      <Button
-        variant={'outline'}
-        className={
-          'border-blue-dark bg-dark-blue-gradient absolute left-1 top-3 z-10 mr-0.5 size-6 !p-1'
-        }
-      >
-        <img src={Monitor} alt={'monitor'} />
-      </Button>
+    <div className={'relative rounded-lg bg-blue-subtle py-4'}>
+      <div className={'bg-blue-blur-gradient absolute top-0 z-10 h-12 w-20 rounded-l-lg'}>
+        <Button
+          variant={'outline'}
+          className={
+            'my-3 ml-1 mr-0.5 flex size-6 items-center justify-center border-blue-dark/40 bg-dark-blue-gradient !p-0'
+          }
+        >
+          <div className={'flex size-3 items-center justify-center'}>
+            <img src={Monitor} alt={'monitor'} />
+          </div>
+        </Button>
+      </div>
       <div ref={videoContainerRef} />
     </div>
   );

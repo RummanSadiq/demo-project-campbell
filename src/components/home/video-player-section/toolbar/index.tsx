@@ -8,11 +8,11 @@ export const ToolBar: FunctionComponent = () => {
   return (
     <div className={'flex justify-center gap-1 border-b p-1'}>
       {ToolbarOptions.map((item, index) => (
-        <div key={item.label} className='flex items-center'>
+        <div key={item.label} className='flex items-center gap-1'>
           <DropdownMenu.Root>
             <DropdownMenu.Trigger asChild>
               <div className='flex cursor-pointer items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium transition hover:bg-gray-100'>
-                <img src={item.icon} alt={item.label.toLowerCase()} />
+                <img src={item.icon} alt={item.label.toLowerCase()} className={'size-4'} />
                 <p>{item.label}</p>
                 <img src={ChevronDown} alt='chevron-down' className={'px-1 py-1.5'} />
               </div>

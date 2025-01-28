@@ -23,7 +23,7 @@ export const Drawer: FunctionComponent<PropsWithChildren<Props>> = ({
         className,
       )}
     >
-      <div className='flex items-center justify-between border-b px-3 py-2.5'>
+      <div className='flex items-center justify-between border-b px-2 py-1.5'>
         <p className='text-sm font-medium'>{title}</p>
         <Button variant='icon' onClick={onClose} className='p-0'>
           <img src={Cross} alt='close' />

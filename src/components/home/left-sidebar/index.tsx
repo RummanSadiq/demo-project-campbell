@@ -20,7 +20,7 @@ export const LeftSidebar: FunctionComponent = () => {
           selected={thumbnail.selected}
         />
       ))}
-      <Button variant={'ghost'} className={'flex justify-center'}>
+      <Button variant={'ghost'} className={'!shadow-custom-2 flex justify-center'}>
         <img src={Plus} alt={'plus'} />
       </Button>
     </div>

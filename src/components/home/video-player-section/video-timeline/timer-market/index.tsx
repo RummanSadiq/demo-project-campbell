@@ -32,9 +32,9 @@ export const TimeMarkers: FunctionComponent<Props> = ({
       )}
     >
       {timeMarkers.map((time, index) => (
-        <div key={time} className='flex items-center'>
-          <p>{time}</p>
-          {index < timeMarkers.length - 1 && <div className={'ml-3.5 h-2 w-[2px] bg-muted'} />}
+        <div key={time} className='flex h-5 items-center'>
+          <p className={'text-muted-secondary'}>{time}</p>
+          {index < timeMarkers.length - 1 && <div className={'ml-3.5 h-2 w-[1px] bg-muted'} />}
         </div>
       ))}
     </div>

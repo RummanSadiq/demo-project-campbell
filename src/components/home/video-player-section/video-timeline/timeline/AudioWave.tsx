@@ -18,15 +18,17 @@ export const AudioWave: FunctionComponent = () => {
   });
 
   return (
-    <div className={'bg-pink/10 relative rounded-lg py-2'}>
-      <Button
-        variant={'outline'}
-        className={
-          'border-pink-dark bg-pink-gradient absolute left-1 top-1 z-10 mr-0.5 size-6 !p-1'
-        }
-      >
-        <img src={MusicNote} alt={'music-note'} />
-      </Button>
+    <div className={'relative rounded-lg bg-pink/10 py-2'}>
+      <div className={'bg-pink-blur-gradient absolute top-0 z-10 h-8 w-20 rounded-l-lg'}>
+        <Button
+          variant={'outline'}
+          className={'my-1 ml-1 mr-0.5 size-6 border-pink-dark bg-pink-gradient !p-1'}
+        >
+          <div className={'flex size-3 items-center justify-center'}>
+            <img src={MusicNote} alt={'music-note'} />
+          </div>
+        </Button>
+      </div>
       <div ref={videoContainerRef} />
     </div>
   );

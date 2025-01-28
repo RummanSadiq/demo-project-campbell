@@ -11,7 +11,7 @@ export const VideoTimeline: FunctionComponent<Props> = ({ openDrawer }) => {
   return (
     <div className={'flex w-full flex-col gap-2'}>
       <TimeMarkers openDrawer={openDrawer} />
-      <div className={'relative flex w-full flex-col gap-2 p-3 pt-0'}>
+      <div className={'relative flex w-full flex-col gap-2 p-3 pb-2 pt-0'}>
         <img src={Line} alt={'line'} className={'absolute left-20 z-20 w-fit'} />
         <VideoWave />
         <TimelineZoomScroller />

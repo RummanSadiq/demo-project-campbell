@@ -15,7 +15,7 @@ export const VideoThumbnail: FunctionComponent<Props> = ({ count, duration, src,
       <img src={src} alt={'video-placeholder'} className={'rounded-md'} />
       <p
         className={
-          'absolute bottom-1 left-1 z-10 flex size-5 flex-col items-center justify-center rounded-full bg-foreground-secondary/60 text-xxs font-medium text-white backdrop-blur-sm'
+          'absolute bottom-1 left-1 z-10 flex size-[18px] flex-col items-center justify-center rounded-full bg-foreground-secondary/60 text-xxs font-medium text-white backdrop-blur-sm'
         }
       >
         {count}
